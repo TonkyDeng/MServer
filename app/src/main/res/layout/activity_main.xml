@@ -6,14 +6,39 @@
     android:layout_height="match_parent"
     tools:context="org.tonky.mserver.MainActivity">
 
-    <!--常亮,横屏-->
+    <!--Date-->
     <TextView
+        android:id="@+id/DateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:textColor="#36c"
+        app:layout_constraintBottom_toBottomOf="@+id/TimeView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Time-->
+    <TextView
+        android:id="@+id/TimeView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loading..."
+        android:textSize="100sp"
+        android:textColor="#36c"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Connect-->
+    <TextView
+        android:id="@+id/ConnectView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#36c"
+        android:text="Net:waiting..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
