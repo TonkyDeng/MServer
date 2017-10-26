@@ -10,15 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-                android:name=".MainActivity"
-                android:screenOrientation="sensor"
-                android:keepScreenOn="true"><!--横屏，常亮-->
+            android:name=".MainActivity"
+            android:keepScreenOn="true"
+            android:screenOrientation="sensorLandscape"> <!-- 横屏，常亮 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SensorViewer"></activity>
     </application>
 
 </manifest>
